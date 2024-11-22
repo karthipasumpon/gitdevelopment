@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+:root {
+  /* Global Variable */
+  --headingColor : blue;
+  --mainHeadFSDesktop : 54px;
+  --mainHeadFSMobile : 36px;
+  --Bold : "Roboto-Bold";
+  --Light : "Roboto-Light";
+  --Regular : "Roboto-Regular";
+}
+
+.bgimage {
+  border: 2px solid red;
+  background-image: url('../images/programs-improvement.jpg'); /* 404 * 376 */
+  /* height: 500px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+/* .content img {
+  width: 100%;
+} */
+
+/* Parent */
+.content {
+  border: 2px solid red;
+  width: 450px;
+}
+/* Child */
+.content img {
+  width: 100%;
+  display: block;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subcontainer {
+  flex-basis: 33.33%;
+  border: 2px solid red;
+}
+
+.subcontainer img {
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+  font-family: var(--Bold);
+  --headingColor : red; /* Local Variable */
+  color: var(--headingColor);
+  font-size: var(--mainHeadFSDesktop);
+  margin: 10px 0;
+}
+
+h2 {
+  color: var(--headingColor);
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+h3 {
+  color: var(--headingColor);
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+/* Global Style */
+/* 1px to infinity */
+h2 {
+}
+/* Media Queries */
+/* 576px to infinity   */
+@media all and (min-width: 576px) {
+  h2 {
+    font-size: 42px;
+    /* text-align: center; */
+  }
+}
+/* 768 to infinity */
+@media all and (min-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+@media all and (min-width: 992px) {
+  h2 {
+    font-size: 54px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+/* 1px to 576px */
+/* Mobile Screen */
+@media all and (max-width: 576px) {
+  h1 {
+    font-size: var(--mainHeadFSMobile)
+  }
+}
+
+/* media type
+all
+screen
+print
+
+
+
+media features
+min-width
+max-width
+min-height
+max-height
+
+orientation
+    landscape
+    portrait */
